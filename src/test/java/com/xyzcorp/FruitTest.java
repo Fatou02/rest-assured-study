@@ -21,4 +21,19 @@ public class FruitTest {
                 .assertThat()
                 .body("[0].description", equalTo("Winter fruit"));
     }
+
+    @Test
+    public void testGetFruits2() {
+        given()
+                .relaxedHTTPSValidation()
+                .accept(ContentType.JSON)
+                .when()
+                .get("https://staging.tiered-planet.net/mild-temper/fruits")
+                .then()
+                .assertThat()
+                .body("[1].description", equalTo("Tropical fruit"));
+    }
+
+
+
 }
