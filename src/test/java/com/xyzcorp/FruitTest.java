@@ -37,6 +37,7 @@ public class FruitTest {
                 .body("[1].description", equalTo("Tropical fruit"));
     }
 
+
     @Test
     public void testPostNewFruit(){
         JSONObject bananaObject = new JSONObject()
