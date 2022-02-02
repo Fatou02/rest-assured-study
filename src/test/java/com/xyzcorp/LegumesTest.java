@@ -7,6 +7,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class LegumesTest {
 
+    //[{"description":"Root vegetable, usually orange","name":"Carrot"}
+    //{"description":"Summer squash","name":"Zucchini"}]
+
     @Test
     public void testGetLegumesZucchini(){
 
